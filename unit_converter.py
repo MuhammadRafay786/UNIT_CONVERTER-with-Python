@@ -67,11 +67,11 @@ def convert(value, from_unit, to_unit, category):
 st.set_page_config(page_title="Unit Converter For GIAIC", page_icon="📐", layout="centered")
 
 # Custom CSS
-st.header  ("  UNIT CONVERTER WITH FORMULA ")
 st.markdown("""
 <style>
-    .h1 {UNIT CONVERTER WITH FORMULAS}
-    .main { background-color: GRAY }
+
+    .main { background-color: #f1f3f4; }
+    .st-bw { background-color: #f1f3f4; }
     .stTextInput input { font-size: 18px !important; }
     .unit-section { 
         background-color: white;
@@ -100,8 +100,17 @@ st.markdown("""
         background: #f1f3f4;
         border-color: #f1f3f4;
     }
+    .beautiful-heading {
+        font-size: 40px;
+        font-weight: bold;
+        color: #4CAF50;
+        text-align: center;
+        margin-top: 20px;
+    }
 </style>
 """, unsafe_allow_html=True)
+
+st.markdown('<div class="beautiful-heading">UNIT CONVERTER WITH FORMULAS 📐</div>', unsafe_allow_html=True)
 
 # Initialize session state
 if 'category' not in st.session_state:
